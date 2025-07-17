@@ -15,21 +15,7 @@ def load_local_css(file_path):
 
 load_local_css("assets/custom.css")
 
-# Theme toggle
-dark_mode = st.sidebar.toggle("🌙Enable Dark Mode")
 
-# Gradient background for main content
-st.markdown("""
-    <style>
-    [data-testid="stAppViewContainer"] {
-        background: linear-gradient(to top left, #f3f4f6, #e0e7ff);
-        background-size: cover;
-    }
-    [data-testid="stVerticalBlock"] * {
-        color: #000 !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
 
 # Apply gradient background and black text only to main content
 st.markdown("""

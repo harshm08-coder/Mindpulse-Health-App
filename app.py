@@ -11,24 +11,7 @@ load_local_css("assets/custom.css")
 
 # Page setup
 st.set_page_config(page_title="Mindpulse Health App", layout="centered")
-dark_mode = st.sidebar.toggle("🌙 Enable Dark Mode")
 
-st.markdown("""
-    <style>
-    [data-testid="stAppViewContainer"] {
-        background: linear-gradient(to top left, #f3f4f6, #e0e7ff);
-        background-size: cover;
-        color: #000 !important;
-    }
-
-    [data-testid="stSidebar"] * {
-        color: inherit !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
-# Mode switch
-mode_class = "dark-mode" if dark_mode else "light-theme"
-st.markdown(f"<body class='{mode_class}'>", unsafe_allow_html=True)
 
 # Set background
 def get_base64_bg(image_path):

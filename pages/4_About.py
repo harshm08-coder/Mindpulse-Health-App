@@ -11,25 +11,6 @@ def load_local_css(file_path):
 
 load_local_css("assets/custom.css")
 
-# Theme toggle
-dark_mode = st.sidebar.toggle("🌙Enable Dark Mode")
-
-# Inject dark/light mode JS
-if dark_mode:
-    st.markdown("""
-        <script>
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-theme');
-        </script>
-    """, unsafe_allow_html=True)
-else:
-    st.markdown("""
-        <script>
-        document.body.classList.add('light-theme');
-        document.body.classList.remove('dark-mode');
-        </script>
-    """, unsafe_allow_html=True)
-
 # Apply gradient background and black text only to main content
 st.markdown("""
     <style>

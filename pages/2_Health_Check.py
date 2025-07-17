@@ -22,24 +22,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Theme toggle
-dark_mode = st.sidebar.toggle("🌙 Enable Dark Mode")
-mode_class = "dark-mode" if dark_mode else "light-theme"
-st.markdown(f"<body class='{mode_class}'>", unsafe_allow_html=True)
-# Apply gradient background and black text only to main content
-st.markdown("""
-    <style>
-    [data-testid="stAppViewContainer"] {
-        background: linear-gradient(to top left, #f3f4f6, #e0e7ff);
-        background-size: cover;
-        color: #000 !important;
-    }
 
-    [data-testid="stSidebar"] * {
-        color: inherit !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
 # Wrapped Form in white box
 st.markdown("""<div class="form-container"><h2>🧪 Health Check</h2><p>Please fill out the following details to assess your health risks:</p>""", unsafe_allow_html=True)
 
