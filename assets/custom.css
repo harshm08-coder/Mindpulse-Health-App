@@ -64,28 +64,4 @@ h1, h2, h3, h4, p {
     font-weight: bold;
 }
 
-/* === Dark Mode Support === */
-body.dark-mode .gradient-card {
-    background: rgba(30, 30, 30, 0.95);
-    color: white;
-}
 
-.dark-mode .form-container {
-    background-color: rgba(20, 20, 20, 0.92);
-    color: white;
-}
-
-.dark-mode h1, 
-.dark-mode h2, 
-.dark-mode h3, 
-.dark-mode p {
-    color: #f0f0f0 !important;
-}
-
-.dark-mode .stTextInput input,
-.dark-mode .stNumberInput input,
-.dark-mode .stSelectbox div,
-.dark-mode .stRadio div,
-.dark-mode .stSlider div {
-    color: white !important;
-}
