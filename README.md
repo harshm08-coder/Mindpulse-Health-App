@@ -23,7 +23,7 @@ This project aligns with **UN Sustainable Development Goal 3 (SDG 3)**: _Good He
 ## 🚀 Live Demo
 
 > 🔗 Try the live app (after deployment):  
-📍 **https://your-username.streamlit.app**
+📍 **https://mindpulse-health-app-gwdtjtybwzekuoy6kjqypg.streamlit.app/**
 
 _Replace this with your actual Streamlit Cloud link after deployment._
 
